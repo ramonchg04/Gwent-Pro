@@ -8,7 +8,7 @@ public class Card //Creando mi clase carta que contendra todas las caracteristic
     public int id;
     public string cardName;
     public string cardType;
-    public string cardEffect;
+    public int cardEffect;
     
     public Card()
     {

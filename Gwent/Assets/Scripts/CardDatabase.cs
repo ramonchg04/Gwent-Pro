@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class CardDatabase : MonoBehaviour
 {
-    public static List<Card> cards = new List<Card>();// Una lista donde vamos a almacenar las cartas del juego
+    public static List<Card> Cards = new List<Card>();
 
-    void Awake()
+    private void Awake()
     {
-        //Añadiendo las difererntes cartas
-        cards.Add(new Card(1,"Reina Arquera","Líder", "Mantener una carta aleatoria en el campo entre ronda y ronda"));
-        cards.Add(new Card(19, "Rey", "Líder", "Roba una carta extra en la segunda ronda"));
-        cards.Add(new Hero(2,"Pekka","Elimina la carta con más poder del campo(propio o del rival)",9,"(M)"));
+        Cards.Add(new Card(1,"Reina Arquera","Lider",1));
+        Cards.Add(new Card(18, "Rey", "Lider", 2));
+        Cards.Add(new Hero(2, "Pekka", 5, 9, "M"));
+        Cards.Add(new Hero(19, "Caballero Dorado", 4, 8, "M"));
+        Cards.Add(new Silver(6, "Montapuercos", 6, 6, "M"));
+        Cards.Add(new Card(11, "Montepuerco", "Clima", 8));
+
     }
 }
