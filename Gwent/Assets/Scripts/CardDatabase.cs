@@ -10,6 +10,6 @@ public class CardDatabase : MonoBehaviour
     {
 
         Cards.Add(new Card(1,"Reina Arquera","Líder", "Mantener una carta aleatoria en el campo entre ronda y ronda"));   
-    
+        
     }
 }
