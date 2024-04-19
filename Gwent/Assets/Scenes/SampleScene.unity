@@ -191,6 +191,99 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &203410876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 203410877}
+  - component: {fileID: 203410880}
+  - component: {fileID: 203410879}
+  - component: {fileID: 203410878}
+  m_Layer: 5
+  m_Name: Draw Cards CR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &203410877
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203410876}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1636534622}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 859.6, y: 225.3}
+  m_SizeDelta: {x: 55, y: 88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &203410878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203410876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a1d4c84065f1645928f207ef81fe67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card1: {fileID: 2686944432726722052, guid: 97aab76161001fc4893de1d88bc30473, type: 3}
+  Card2: {fileID: 1964626919628729364, guid: 7cbe28133fee6444090e7d93ae35a437, type: 3}
+  Card3: {fileID: 1964626919628729364, guid: 8c3dba6614a059948bf34baeb0c193bf, type: 3}
+  Hand1: {fileID: 8616721983298527257, guid: eedaa7ad20ab5d04981517243e071f6b, type: 3}
+--- !u!114 &203410879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203410876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ba898ae04874a154ca122ab86e25e06a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &203410880
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203410876}
+  m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +386,7 @@ GameObject:
   - component: {fileID: 957913301}
   - component: {fileID: 957913300}
   m_Layer: 5
-  m_Name: Draw Cards
+  m_Name: Draw Cards COC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,6 +562,7 @@ RectTransform:
   - {fileID: 666049926}
   - {fileID: 2132561365}
   - {fileID: 957913299}
+  - {fileID: 203410877}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -494,6 +588,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1636534622}
     m_Modifications:
+    - target: {fileID: -6935905757104117316, guid: af81371d492d41248886bb1d0b2dbd4f, type: 3}
+      propertyPath: m_StartAxis
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1515458989257814597, guid: af81371d492d41248886bb1d0b2dbd4f, type: 3}
       propertyPath: m_Name
       value: COC_Hand
@@ -508,7 +606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515458989257814598, guid: af81371d492d41248886bb1d0b2dbd4f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1515458989257814598, guid: af81371d492d41248886bb1d0b2dbd4f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -606,7 +704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4495591318788227056, guid: 483e9138d54519a4b8450e668d0268b8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4495591318788227056, guid: 483e9138d54519a4b8450e668d0268b8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -703,7 +801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8616721983298527256, guid: eedaa7ad20ab5d04981517243e071f6b, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8616721983298527256, guid: eedaa7ad20ab5d04981517243e071f6b, type: 3}
       propertyPath: m_AnchorMax.x

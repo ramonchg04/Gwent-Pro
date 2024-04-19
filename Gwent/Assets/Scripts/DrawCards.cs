@@ -11,14 +11,14 @@ public class DrawCards : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        List<GameObject> list = new List<GameObject>();
+        List<GameObject> list = new List<GameObject>();//Creo una lista de las cartas a repartir
         list.Add(Card1);
         list.Add(Card2);
         list.Add(Card3);
-        foreach(GameObject card in list)
+        foreach(GameObject card in list)//las reccorro y las reparto 
         {
-            GameObject card1 = Instantiate(card, new Vector3(0f, 0f, 0f), Quaternion.identity);
-            card1.transform.SetParent(Hand1.transform, false);
+            GameObject card1 = Instantiate(card, new Vector3(0f, 0f, 0f), Quaternion.identity);//instancio cada carta que reparto
+            card1.transform.SetParent(Hand1.transform, false);//aqui establezco que se repartan la mano donde cree un grid layout para agruparlas
         }
         
     }
