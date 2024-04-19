@@ -9,13 +9,13 @@ public class Card //Creando mi clase carta que contendra todas las caracteristic
     public string cardName;
     public string cardType;
     public int cardEffect;
-    
+    //Los numeros asociados a los efectos de las cartas estan en el readme
     public Card()
     {
 
     }
 
-    public Card(int Id, string CardName, string CardType, string CardEffect) //Metodo contructor de esta clase
+    public Card(int Id, string CardName, string CardType, int CardEffect) //Metodo contructor de esta clase
     {
         this.id = Id;
         this.cardName = CardName;
@@ -29,7 +29,7 @@ public class Hero : Card//Creo la clase para las cartas de tipo heroe, que hered
     public string attackType;
     public int power;
 
-    public Hero(int Id, string CardName, string CardEffect,int Power, string AttackType) //Metodo contructor de esta clase
+    public Hero(int Id, string CardName, int CardEffect,int Power, string AttackType) //Metodo contructor de esta clase
     {
         this.id = Id;
         this.cardName = CardName;
@@ -45,7 +45,7 @@ public class Silver : Card//Creo la clase para las cartas de tipo plata, que her
     public string attackType;
     public int power;
 
-    public Silver(int Id, string CardName, string CardType, string CardEffect, int Power, string AttackType) //Metodo contructor de esta clase
+    public Silver(int Id, string CardName, int CardEffect, int Power, string AttackType) //Metodo contructor de esta clase
     {
         this.id = Id;
         this.cardName = CardName;
@@ -60,7 +60,7 @@ public class Decoy : Card//Creo la clase para las cartas de tipo señuelo, que he
 {
     public int power;
 
-    public Decoy(int Id, string CardName, string CardType, string CardEffect, int Power) //Metodo contructor de esta clase
+    public Decoy(int Id, string CardName, int CardEffect) //Metodo contructor de esta clase
     {
         this.id = Id;
         this.cardName = CardName;
