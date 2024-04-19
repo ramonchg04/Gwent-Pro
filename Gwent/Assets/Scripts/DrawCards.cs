@@ -15,10 +15,12 @@ public class DrawCards : MonoBehaviour
         list.Add(Card1);
         list.Add(Card2);
         list.Add(Card3);
-        foreach(GameObject card in list)//las reccorro y las reparto 
+        for (int i=0;i<list.Count;i=0)//las reccorro y las reparto 
         {
-            GameObject card1 = Instantiate(card, new Vector3(0f, 0f, 0f), Quaternion.identity);//instancio cada carta que reparto
+            GameObject random = list[Random.Range(0, list.Count)];
+            GameObject card1 = Instantiate(random, new Vector3(0f, 0f, 0f), Quaternion.identity);//instancio cada carta que reparto
             card1.transform.SetParent(Hand1.transform, false);//aqui establezco que se repartan la mano donde cree un grid layout para agruparlas
+            list.Remove(random);
         }
         
     }
