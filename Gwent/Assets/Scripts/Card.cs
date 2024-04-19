@@ -29,7 +29,7 @@ public class Hero : Card//Creo la clase para las cartas de tipo heroe, que hered
     public string attackType;
     public int power;
 
-    public Hero(int Id, string CardName, string CardType, string CardEffect,int Power, string AttackType) //Metodo contructor de esta clase
+    public Hero(int Id, string CardName, string CardEffect,int Power, string AttackType) //Metodo contructor de esta clase
     {
         this.id = Id;
         this.cardName = CardName;
