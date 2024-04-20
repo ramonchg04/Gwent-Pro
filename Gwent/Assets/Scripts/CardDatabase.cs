@@ -8,12 +8,16 @@ public class CardDatabase : MonoBehaviour
 
     private void Awake()
     {
-        Cards.Add(new Card(1,"Reina Arquera","Lider",1));
-        Cards.Add(new Card(18, "Rey", "Lider", 2));
-        Cards.Add(new Hero(2, "Pekka", 5, 9, "M"));
-        Cards.Add(new Hero(19, "Caballero Dorado", 4, 8, "M"));
-        Cards.Add(new Silver(6, "Montapuercos", 6, 6, "M"));
-        Cards.Add(new Card(11, "Montepuerco", "Clima", 8));
+        Cards.Add(new Card(1,"Reina Arquera","Lider",1,0,""));
+        Cards.Add(new Card(2, "Rey", "Lider", 2, 0, ""));
+        Cards.Add(new Card(3, "Pekka","Heroe", 5, 9, "M"));
+        Cards.Add(new Card(4, "Rey Barbaro","Heroe", 7, 8, "M"));
+        Cards.Add(new Card(5, "Gigante Eléctrico","Heroe", 4, 10, "M"));
+        Cards.Add(new Card(6, "Caballero Dorado", "Heroe" ,5, 8, "M"));
+        Cards.Add(new Card(7, "Bruja","Silver", 5, 6, "R"));
+        Cards.Add(new Card(8, "Lanzafuegos","Silver", 7, 5, "R"));
+        Cards.Add(new Card(9, "Montepuerco","Clima", 8,0,""));
 
     }
+
 }
