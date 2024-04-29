@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2160735084942281584}
   - component: {fileID: 1332473613975906470}
   - component: {fileID: 5753281524388917073}
-  - component: {fileID: 103025477786067701}
+  - component: {fileID: 4793450387168609156}
   m_Layer: 5
-  m_Name: Lanzafuegos
+  m_Name: Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 24609fa9a7e190c4595c0ecf376e40b3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &103025477786067701
+--- !u!114 &4793450387168609156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,8 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d583d68462d214fade48163fddb81a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentId: 7
-  components: []
+  componentId: 0
   id: 0
   cardName: 
   cardType: 

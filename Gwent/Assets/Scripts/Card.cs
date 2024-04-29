@@ -12,13 +12,14 @@ public class Card //Creando mi clase carta que contendra todas las caracteristic
     public int cardEffect;
     public int power;
     public string attackType;
+    public Sprite cardImage;
     //Los numeros asociados a los efectos de las cartas estan en el readme
     public Card()
     {
 
     }
 
-    public Card(int Id, string CardName, string CardType, int CardEffect,int power , string attackType) //Metodo contructor de esta clase
+    public Card(int Id, string CardName, string CardType, int CardEffect,int power , string attackType, Sprite CardImage) //Metodo contructor de esta clase
     {
         this.id = Id;
         this.cardName = CardName;
@@ -26,5 +27,6 @@ public class Card //Creando mi clase carta que contendra todas las caracteristic
         this.cardEffect = CardEffect;
         this.power = power;
         this.attackType = attackType;
+        this.cardImage = CardImage;
     }   
 }
